@@ -208,21 +208,36 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
                   <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      className="bg-cyan-500/80 hover:bg-cyan-500 text-white"
+                    {/* Demo Button */}
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <ExternalLink size={16} className="mr-1" />
-                      Demo
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-white/20 text-white hover:bg-white/10"
+                      <Button
+                        size="sm"
+                        className="bg-cyan-500/80 hover:bg-cyan-500 text-white"
+                      >
+                        <ExternalLink size={16} className="mr-1" />
+                        Demo
+                      </Button>
+                    </a>
+
+                    {/* Code Button */}
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <Github size={16} className="mr-1" />
-                      Code
-                    </Button>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="border-white/20 text-white hover:bg-white/10"
+                      >
+                        <Github size={16} className="mr-1" />
+                        Code
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
