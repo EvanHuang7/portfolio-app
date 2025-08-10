@@ -146,20 +146,21 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Portfolio Website",
+      title: "Connect To World",
       description:
-        "Modern, fully responsive portfolio website showcasing professional work with smooth animations, interactive elements, dark/light mode toggle, and optimized performance.",
+        "This CTWGO (Connect To World, Go!) project, a Python-based blog web application that enables users to interact with content and manage their accounts seamlessly.",
       image:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Connect-To-World-Project-Card.png",
       technologies: [
         "Python",
         "Flask",
-        "TypeScript",
-        "Framer Motion",
-        "Shadcn/ui",
+        "JavaScript",
+        "SQLAlchemy",
+        "Jinja2",
+        "Bootstrap",
       ],
-      demoUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      demoUrl: "https://www.youtube.com/watch?v=qDDPCy3vtOc",
+      githubUrl: "https://github.com/EvanHuang7/CTWGO",
     },
   ];
 
