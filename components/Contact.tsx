@@ -1,80 +1,90 @@
 "use client";
 
-import { useState } from 'react';
-import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { useState } from "react";
+import {
+  Send,
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    alert('Message sent successfully!');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
+    alert("Message sent successfully!");
+    setFormData({ name: "", email: "", subject: "", message: "" });
     setIsSubmitting(false);
   };
 
   const contactInfo = [
     {
       icon: <Mail size={24} />,
-      label: 'Email',
-      value: 'evan@example.com',
-      href: 'mailto:evan@example.com'
+      label: "Email",
+      value: "mrxiaohui204@gmail.com",
+      href: "mailto:mrxiaohui204@gmail.com",
     },
     {
       icon: <Phone size={24} />,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      label: "Phone",
+      value: "+1 (306) 261-1868",
+      href: "tel:+13062611868",
     },
     {
       icon: <MapPin size={24} />,
-      label: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com'
-    }
+      label: "Location",
+      value: "Saskatoon, SK",
+      href: "https://maps.google.com",
+    },
   ];
 
   const socialLinks = [
     {
       icon: <Github size={20} />,
-      label: 'GitHub',
-      href: 'https://github.com',
-      color: 'hover:text-gray-300'
+      label: "GitHub",
+      href: "https://github.com/EvanHuang7",
+      color: "hover:text-gray-300",
     },
     {
       icon: <Linkedin size={20} />,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com',
-      color: 'hover:text-blue-400'
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/evan-huang-97336b1a9/",
+      color: "hover:text-blue-400",
     },
     {
-      icon: <Twitter size={20} />,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      color: 'hover:text-sky-400'
-    }
+      icon: <Mail size={20} />,
+      label: "Email",
+      href: "mailto:mrxiaohui204@gmail.com",
+      color: "hover:text-sky-400",
+    },
   ];
 
   return (
@@ -87,16 +97,18 @@ const Contact = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Have a project in mind or want to discuss opportunities? 
-            I&apos;d love to hear from you. Let&apos;s create something amazing together.
+            Have a project in mind or want to discuss opportunities? I&apos;d
+            love to hear from you. Let&apos;s create something amazing together.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-8">Let&apos;s Connect</h3>
-            
+            <h3 className="text-2xl font-semibold text-foreground mb-8">
+              Let&apos;s Connect
+            </h3>
+
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
                 <a
@@ -110,15 +122,21 @@ const Contact = () => {
                     {info.icon}
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">{info.label}</p>
-                    <p className="text-foreground font-semibold">{info.value}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {info.label}
+                    </p>
+                    <p className="text-foreground font-semibold">
+                      {info.value}
+                    </p>
                   </div>
                 </a>
               ))}
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-4">Follow Me</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-4">
+                Follow Me
+              </h4>
               <div className="flex space-x-4">
                 {socialLinks.map((link, index) => (
                   <a
@@ -141,7 +159,10 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-muted-foreground mb-2"
+                    >
                       Name *
                     </label>
                     <Input
@@ -156,7 +177,10 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-muted-foreground mb-2"
+                    >
                       Email *
                     </label>
                     <Input
@@ -173,7 +197,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-muted-foreground mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-muted-foreground mb-2"
+                  >
                     Subject *
                   </label>
                   <Input
@@ -189,7 +216,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-muted-foreground mb-2"
+                  >
                     Message *
                   </label>
                   <Textarea

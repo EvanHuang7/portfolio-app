@@ -128,7 +128,7 @@ const Hero = () => {
 
             <div className="flex justify-center lg:justify-start space-x-6">
               <a
-                href="https://github.com"
+                href="https://github.com/EvanHuang7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110"
@@ -136,7 +136,7 @@ const Hero = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/evan-huang-97336b1a9/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110"
@@ -144,7 +144,7 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:evan@example.com"
+                href="mailto:mrxiaohui204@gmail.com"
                 className="text-muted-foreground hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110"
               >
                 <Mail size={24} />
