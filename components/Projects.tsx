@@ -135,21 +135,14 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "AI Chat Application",
+      title: "Item Shopping",
       description:
-        "Cutting-edge AI-powered chat application featuring advanced natural language processing, contextual conversations, multi-language support, and seamless real-time communication experience.",
+        "Item Shopping is an e-commerce app built with PHP, which offers a comprehensive platform for users to buy and sell.",
       image:
-        "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: [
-        "Python",
-        "Flask",
-        "OpenAI API",
-        "WebSocket",
-        "React",
-        "SQLite",
-      ],
-      demoUrl: "https://example.com",
-      githubUrl: "https://github.com",
+        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Item-Shopping-Project-Card.png",
+      technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
+      demoUrl: "https://www.youtube.com/watch?v=HH3utaJtaF8",
+      githubUrl: "https://github.com/EvanHuang7/Item-Shopping-website",
     },
     {
       id: 6,
@@ -159,8 +152,8 @@ const Projects = () => {
       image:
         "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: [
-        "Next.js",
-        "Tailwind CSS",
+        "Python",
+        "Flask",
         "TypeScript",
         "Framer Motion",
         "Shadcn/ui",
