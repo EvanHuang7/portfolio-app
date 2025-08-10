@@ -56,7 +56,7 @@ const About = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full stack developer with 5+ years of experience building 
+            I&apos;m a passionate full stack developer with 5+ years of experience building 
             scalable web applications. I love turning complex problems into simple, 
             beautiful, and intuitive solutions.
           </p>
@@ -66,14 +66,14 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-cyan-400">My Journey</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Started as a curious computer science student, I've evolved into a seasoned developer 
+              Started as a curious computer science student, I&apos;ve evolved into a seasoned developer 
               who thrives on creating exceptional digital experiences. My journey spans across 
-              startups and established companies, where I've led teams and delivered products 
+              startups and established companies, where I&apos;ve led teams and delivered products 
               used by millions.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               I believe in writing clean, maintainable code and staying up-to-date with the 
-              latest technologies. When I'm not coding, you'll find me contributing to open 
+              latest technologies. When I&apos;m not coding, you&apos;ll find me contributing to open 
               source projects or mentoring aspiring developers.
             </p>
             <div className="flex flex-wrap gap-2">

@@ -81,7 +81,7 @@ const Hero = () => {
           {/* Content */}
           <div className="order-1 lg:order-2 text-center lg:text-left animate-fade-in-up">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="block text-foreground mb-2">Hi, I'm</span>
+              <span className="block text-foreground mb-2">Hi, I&apos;m</span>
             <span className="block bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Evan Huang
             </span>

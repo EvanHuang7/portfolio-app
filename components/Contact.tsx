@@ -88,14 +88,14 @@ const Contact = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Have a project in mind or want to discuss opportunities? 
-            I'd love to hear from you. Let's create something amazing together.
+            I&apos;d love to hear from you. Let&apos;s create something amazing together.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-8">Let's Connect</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-8">Let&apos;s Connect</h3>
             
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
