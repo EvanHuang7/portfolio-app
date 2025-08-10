@@ -11,40 +11,42 @@ const About = () => {
     {
       icon: <Code size={28} />,
       title: 'Frontend Development',
-      description: 'Expert in modern frontend technologies including React, Next.js, Vue.js, TypeScript, JavaScript ES6+, HTML5, CSS3, Tailwind CSS, SASS, and responsive design principles. Experienced in state management with Redux, Zustand, and Context API.',
+      description: 'React, Next.js, Angular, TypeScript, JavaScript, Tailwind CSS, Shadcn, Redux, Zustand, and Tanstack Query',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       icon: <Server size={28} />,
       title: 'Backend Development',
-      description: 'Proficient in server-side development using Node.js, Express.js, Python, Django, FastAPI, and PHP. Skilled in building RESTful APIs, GraphQL endpoints, microservices architecture, and implementing authentication and authorization systems.',
+      description: 'Node.js, Express.js, GoLang, Python, Flask, PHP and Microservices architecture',
       color: 'from-green-500 to-emerald-500'
     },
     {
       icon: <Database size={28} />,
       title: 'Database',
-      description: 'Extensive experience with both SQL and NoSQL databases including PostgreSQL, MySQL, MongoDB, Redis, and Firebase. Skilled in database design, optimization, indexing, and data modeling for scalable applications.',
+      description: 'PostgreSQL, MySQL, MongoDB, Redis, Firebase, Prisma ORM and Drizzle ORM',
       color: 'from-purple-500 to-pink-500'
     },
     {
       icon: <Cloud size={28} />,
       title: 'Cloud',
-      description: 'Experienced with cloud platforms including AWS, Google Cloud Platform, and Azure. Proficient in containerization with Docker, orchestration with Kubernetes, CI/CD pipelines, and serverless architectures.',
+      description: 'Google Cloud Platform, AWS, Kubernetes, Docker, CI/CD pipelines',
       color: 'from-orange-500 to-red-500'
     },
     {
       icon: <Globe size={28} />,
       title: 'Web Technologies',
-      description: 'Deep understanding of web fundamentals including HTTP/HTTPS protocols, WebSockets, Progressive Web Apps (PWA), Service Workers, Web APIs, browser optimization, and modern build tools like Webpack, Vite, and Parcel.',
+      description: 'HTTP/HTTPS and gRPC protocols, Kafka, RabbitMQ, WebSockets',
       color: 'from-indigo-500 to-purple-500'
     },
     {
       icon: <Smartphone size={28} />,
       title: 'Mobile Development',
-      description: 'Cross-platform mobile development using React Native and Flutter. Experience with native iOS and Android development, mobile UI/UX best practices, app store deployment, and mobile-specific performance optimization.',
+      description: 'React Native',
       color: 'from-pink-500 to-rose-500'
     }
   ];
+
+  const techs = ['React', 'Node.js', 'GoLang', 'Python', 'TypeScript', 'GCP', 'AWS', 'Docker']
 
   return (
     <section id="about" className="py-20 relative bg-background">
@@ -77,7 +79,7 @@ const About = () => {
               source projects or mentoring aspiring developers.
             </p>
             <div className="flex flex-wrap gap-2">
-              {['React', 'Node.js', 'TypeScript', 'AWS', 'Docker', 'GraphQL'].map((tech) => (
+              {techs.map((tech) => (
                 <span
                   key={tech}
                   className="px-3 py-1 bg-slate-800 text-cyan-400 rounded-full text-sm border border-cyan-400/20"
@@ -93,7 +95,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
               <div className="relative w-full h-full bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-700 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-cyan-400 mb-2">5+</div>
+                  <div className="text-4xl font-bold text-cyan-400 mb-2">4+</div>
                   <div className="text-muted-foreground">Years Experience</div>
                 </div>
               </div>
