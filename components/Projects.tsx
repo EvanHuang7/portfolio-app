@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
   const projects = [
     {
@@ -295,30 +296,56 @@ const Projects = () => {
           </div>
 
           {/* Category Buttons */}
-          {Object.entries(categorizedTechnologies).map(([category, techs]) => (
-            <div key={category} className="mb-4">
-              <h4 className="text-sm font-semibold text-muted-foreground mb-2 text-center">
-                {category}
-              </h4>
-              <div className="flex flex-wrap justify-center gap-2">
-                {techs.map((tech) => (
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            {Object.entries(categorizedTechnologies).map(
+              ([category, techs]) => (
+                <div key={category} className="relative">
                   <Button
-                    key={tech}
-                    onClick={() => setFilter(tech)}
-                    variant={filter === tech ? "default" : "outline"}
+                    variant="outline"
                     size="sm"
-                    className={`rounded-full px-4 py-1 transition-all duration-300 text-xs ${
-                      filter === tech
-                        ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
-                        : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
-                    }`}
+                    className="rounded-full px-4 py-2 border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400 transition-all duration-300"
+                    onClick={() =>
+                      setExpandedCategory(
+                        expandedCategory === category ? null : category
+                      )
+                    }
                   >
-                    {tech}
+                    {category}
                   </Button>
-                ))}
-              </div>
-            </div>
-          ))}
+
+                  {/* Dropdown for category technologies */}
+                  {expandedCategory === category && (
+                    <div
+                      className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-card border border-border rounded-lg shadow-lg p-3 z-10 min-w-max"
+                      onMouseEnter={() => setExpandedCategory(category)}
+                      onMouseLeave={() => setExpandedCategory(null)}
+                    >
+                      <div className="flex flex-wrap gap-2 max-w-xs">
+                        {techs.map((tech) => (
+                          <Button
+                            key={tech}
+                            onClick={() => {
+                              setFilter(tech);
+                              setExpandedCategory(null);
+                            }}
+                            variant={filter === tech ? "default" : "outline"}
+                            size="sm"
+                            className={`rounded-full px-3 py-1 transition-all duration-300 text-xs whitespace-nowrap ${
+                              filter === tech
+                                ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
+                                : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
+                            }`}
+                          >
+                            {tech}
+                          </Button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )
+            )}
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
