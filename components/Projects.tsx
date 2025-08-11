@@ -315,11 +315,7 @@ const Projects = () => {
 
                   {/* Dropdown for category technologies */}
                   {expandedCategory === category && (
-                    <div
-                      className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-card border border-border rounded-lg shadow-lg p-3 z-10 min-w-max"
-                      onMouseEnter={() => setExpandedCategory(category)}
-                      onMouseLeave={() => setExpandedCategory(null)}
-                    >
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-card border border-border rounded-lg shadow-lg p-3 z-10 min-w-max">
                       <div className="flex flex-wrap gap-2 max-w-xs">
                         {techs.map((tech) => (
                           <Button
