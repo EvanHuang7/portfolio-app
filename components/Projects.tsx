@@ -262,7 +262,8 @@ const Projects = () => {
                 </div>
               </div>
 
-              <CardContent className="p-6 flex-grow flex flex-col">
+              {/* Card Content, remove "flex-grow" from className of CardContent to remove the empty space between description and tech badges */}
+              <CardContent className="p-6 flex flex-col">
                 <h3 className="text-xl font-semibold mb-3 text-foreground">
                   {project.title}
                 </h3>

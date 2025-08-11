@@ -49,7 +49,7 @@ const Hero = () => {
     >
       {/* Animated background particles */}
       <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-cyan-400/30 rounded-full animate-pulse"
