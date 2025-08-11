@@ -164,11 +164,97 @@ const Projects = () => {
     },
   ];
 
-  // Get all unique technologies
-  const allTechnologies = [
-    "All",
-    ...new Set(projects.flatMap((project) => project.technologies)),
-  ].sort();
+  // Define technology categories
+  const categories = {
+    Frontend: [
+      "React",
+      "Next.js",
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Shadcn",
+      "Redux",
+      "Zustand",
+      "Tanstack Query",
+    ],
+    Backend: [
+      "Node.js",
+      "Express.js",
+      "GoLang",
+      "Python",
+      "Flask",
+      "PHP",
+      "Microservices",
+    ],
+    Database: [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "Firebase",
+      "Prisma ORM",
+      "Drizzle ORM",
+    ],
+    Cloud: [
+      "Google Cloud Platform",
+      "AWS",
+      "Kubernetes",
+      "Docker",
+      "CI/CD pipelines",
+    ],
+    "Web Technologies": [
+      "HTTP/HTTPS",
+      "gRPC",
+      "Kafka",
+      "RabbitMQ",
+      "WebSockets",
+    ],
+    "Mobile Development": ["React Native"],
+    Other: [
+      "Google Gemini AI",
+      "Vapi AI",
+      "Imagekit.io AI",
+      "Clerk & Clerk Billing",
+    ],
+  };
+
+  // Get all technologies from projects
+  const allProjectTechnologies = new Set(
+    projects.flatMap((project) => project.technologies)
+  );
+
+  // Get categorized technologies that exist in projects
+  const categorizedTechnologies = Object.entries(categories).reduce(
+    (acc, [category, techs]) => {
+      const existingTechs = techs.filter((tech) =>
+        allProjectTechnologies.has(tech)
+      );
+      if (existingTechs.length > 0) {
+        acc[category] = existingTechs;
+      }
+      return acc;
+    },
+    {} as Record<string, string[]>
+  );
+
+  // Get technologies that don't fit in any category
+  const categorizedTechsFlat = Object.values(categories).flat();
+  const otherTechnologies = Array.from(allProjectTechnologies)
+    .filter((tech) => !categorizedTechsFlat.includes(tech))
+    .sort();
+
+  // Add other technologies to the Other category if they exist
+  if (otherTechnologies.length > 0) {
+    if (categorizedTechnologies.Other) {
+      categorizedTechnologies.Other = [
+        ...categorizedTechnologies.Other,
+        ...otherTechnologies,
+      ];
+    } else {
+      categorizedTechnologies.Other = otherTechnologies;
+    }
+  }
 
   const filteredProjects =
     filter === "All"
@@ -190,22 +276,48 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12 max-h-32 overflow-y-auto">
-          {allTechnologies.map((tech) => (
+        {/* Filter Buttons by Categories */}
+        <div className="mb-12">
+          {/* All Button */}
+          <div className="flex justify-center mb-6">
             <Button
-              key={tech}
-              onClick={() => setFilter(tech)}
-              variant={filter === tech ? "default" : "outline"}
+              onClick={() => setFilter("All")}
+              variant={filter === "All" ? "default" : "outline"}
               className={`rounded-full px-6 py-2 transition-all duration-300 ${
-                filter === tech
+                filter === "All"
                   ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
                   : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
               }`}
             >
               <Tag size={16} className="mr-2" />
-              {tech}
+              All
             </Button>
+          </div>
+
+          {/* Category Buttons */}
+          {Object.entries(categorizedTechnologies).map(([category, techs]) => (
+            <div key={category} className="mb-4">
+              <h4 className="text-sm font-semibold text-muted-foreground mb-2 text-center">
+                {category}
+              </h4>
+              <div className="flex flex-wrap justify-center gap-2">
+                {techs.map((tech) => (
+                  <Button
+                    key={tech}
+                    onClick={() => setFilter(tech)}
+                    variant={filter === tech ? "default" : "outline"}
+                    size="sm"
+                    className={`rounded-full px-4 py-1 transition-all duration-300 text-xs ${
+                      filter === tech
+                        ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
+                        : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
+                    }`}
+                  >
+                    {tech}
+                  </Button>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
 
