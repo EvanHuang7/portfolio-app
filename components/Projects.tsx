@@ -1,7 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { ExternalLink, Github, Tag, X } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  Tag,
+  X,
+  Monitor,
+  Server,
+  Database,
+  Cloud,
+  Globe,
+  Smartphone,
+  Sparkles,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -249,6 +261,17 @@ const Projects = () => {
     ],
   };
 
+  // Category icons mapping
+  const categoryIcons = {
+    Frontend: Monitor,
+    Backend: Server,
+    Database: Database,
+    Cloud: Cloud,
+    "Web Technologies": Globe,
+    "Mobile Development": Smartphone,
+    Other: Sparkles,
+  };
+
   // Get all technologies from projects
   const allProjectTechnologies = new Set(
     projects.flatMap((project) => project.technologies)
@@ -359,24 +382,33 @@ const Projects = () => {
                   className="relative"
                   onClick={handleClickOutside}
                 >
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className={`rounded-full px-4 py-2 transition-all duration-300 ${
-                      expandedCategory === category ||
-                      selectedCategoryTech?.category === category
-                        ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white border-transparent"
-                        : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
-                    }`}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleCategoryClick(category);
-                    }}
-                  >
-                    {selectedCategoryTech?.category === category
-                      ? `${category}: ${selectedCategoryTech.tech}`
-                      : category}
-                  </Button>
+                  {(() => {
+                    const IconComponent =
+                      categoryIcons[category as keyof typeof categoryIcons];
+                    return (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className={`rounded-full px-4 py-2 transition-all duration-300 ${
+                          expandedCategory === category ||
+                          selectedCategoryTech?.category === category
+                            ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white border-transparent"
+                            : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
+                        }`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleCategoryClick(category);
+                        }}
+                      >
+                        {IconComponent && (
+                          <IconComponent size={16} className="mr-2" />
+                        )}
+                        {selectedCategoryTech?.category === category
+                          ? `${category}: ${selectedCategoryTech.tech}`
+                          : category}
+                      </Button>
+                    );
+                  })()}
 
                   {/* Desktop Dropdown for category technologies (sm and above) */}
                   {expandedCategory === category && (
@@ -513,7 +545,11 @@ const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-muted/50 text-cyan-400 rounded text-xs border border-cyan-400/20"
+                      className={`px-2 py-1 rounded text-xs border transition-all duration-300 ${
+                        filter === tech
+                          ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white border-transparent shadow-lg"
+                          : "bg-muted/50 text-cyan-400 border-cyan-400/20"
+                      }`}
                     >
                       {tech}
                     </span>
