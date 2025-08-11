@@ -1,15 +1,33 @@
 "use client";
 
 import { useState } from "react";
-import { Code, Database, Globe, Cloud, Server, Smartphone } from "lucide-react";
+import {
+  Monitor,
+  Database,
+  Globe,
+  Cloud,
+  Server,
+  Sparkles,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
 
+  const techs = [
+    "React",
+    "Node.js",
+    "GoLang",
+    "Python",
+    "TypeScript",
+    "GCP",
+    "AWS",
+    "Docker",
+  ];
+
   const skills = [
     {
-      icon: <Code size={28} />,
+      icon: <Monitor size={28} />,
       title: "Frontend Development",
       description:
         "React, Next.js, Angular, TypeScript, JavaScript, Tailwind CSS, Shadcn, Redux, Zustand, and Tanstack Query",
@@ -43,22 +61,12 @@ const About = () => {
       color: "from-indigo-500 to-purple-500",
     },
     {
-      icon: <Smartphone size={28} />,
-      title: "Mobile Development",
-      description: "React Native",
+      icon: <Sparkles size={28} />,
+      title: "Other",
+      description:
+        "Google Gemini AI, Vapi AI, Imagekit.io AI, Clerk & Clerk Billing, Cloudflare and Cloudinary",
       color: "from-pink-500 to-rose-500",
     },
-  ];
-
-  const techs = [
-    "React",
-    "Node.js",
-    "GoLang",
-    "Python",
-    "TypeScript",
-    "GCP",
-    "AWS",
-    "Docker",
   ];
 
   return (
@@ -70,11 +78,6 @@ const About = () => {
               About Me
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I&apos;m a passionate full stack developer with 5+ years of
-            experience building scalable web applications. I love turning
-            complex problems into simple, beautiful, and intuitive solutions.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">

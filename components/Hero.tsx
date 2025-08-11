@@ -95,9 +95,9 @@ const Hero = () => {
             </div>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl lg:mx-0 mx-auto mb-12 leading-relaxed">
-              I craft exceptional digital experiences with cutting-edge
-              technologies. Passionate about creating scalable solutions that
-              solve real-world problems.
+              I&apos;m a passionate full stack developer with 4+ years of
+              experience building scalable web applications. I love turning
+              complex problems into simple, beautiful, and intuitive solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">

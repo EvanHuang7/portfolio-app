@@ -250,7 +250,7 @@ const Projects = () => {
       "WebSocket",
       "Stream.io",
     ],
-    "Mobile Development": ["React Native"],
+    // "Mobile Development": ["React Native"],
     Other: [
       "Google Gemini AI",
       "Vapi AI",
