@@ -1,13 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { ExternalLink, Github, Tag } from "lucide-react";
+import { ExternalLink, Github, Tag, X } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
+  const [selectedCategoryTech, setSelectedCategoryTech] = useState<{
+    category: string;
+    tech: string;
+  } | null>(null);
 
   const projects = [
     {
@@ -262,6 +266,32 @@ const Projects = () => {
       ? projects
       : projects.filter((project) => project.technologies.includes(filter));
 
+  // Handle technology selection
+  const handleTechSelect = (tech: string, category: string) => {
+    setFilter(tech);
+    setSelectedCategoryTech({ category, tech });
+    setExpandedCategory(null);
+  };
+
+  // Handle "All" button click
+  const handleAllClick = () => {
+    setFilter("All");
+    setSelectedCategoryTech(null);
+    setExpandedCategory(null);
+  };
+
+  // Handle category button click
+  const handleCategoryClick = (category: string) => {
+    setExpandedCategory(expandedCategory === category ? null : category);
+  };
+
+  // Handle click outside to close dropdown
+  const handleClickOutside = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      setExpandedCategory(null);
+    }
+  };
+
   return (
     <section id="projects" className="py-20 relative bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -282,7 +312,7 @@ const Projects = () => {
           {/* All Button */}
           <div className="flex justify-center mb-6">
             <Button
-              onClick={() => setFilter("All")}
+              onClick={handleAllClick}
               variant={filter === "All" ? "default" : "outline"}
               className={`rounded-full px-6 py-2 transition-all duration-300 ${
                 filter === "All"
@@ -296,33 +326,43 @@ const Projects = () => {
           </div>
 
           {/* Category Buttons */}
-          <div className="flex flex-wrap justify-center gap-3 mb-6">
+          <div className="flex flex-wrap justify-center gap-3 mb-6 relative">
             {Object.entries(categorizedTechnologies).map(
               ([category, techs]) => (
-                <div key={category} className="relative">
+                <div
+                  key={category}
+                  className="relative"
+                  onClick={handleClickOutside}
+                >
                   <Button
                     variant="outline"
                     size="sm"
-                    className="rounded-full px-4 py-2 border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400 transition-all duration-300"
-                    onClick={() =>
-                      setExpandedCategory(
-                        expandedCategory === category ? null : category
-                      )
-                    }
+                    className={`rounded-full px-4 py-2 transition-all duration-300 ${
+                      expandedCategory === category ||
+                      selectedCategoryTech?.category === category
+                        ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white border-transparent"
+                        : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
+                    }`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleCategoryClick(category);
+                    }}
                   >
-                    {category}
+                    {selectedCategoryTech?.category === category
+                      ? `${category}: ${selectedCategoryTech.tech}`
+                      : category}
                   </Button>
 
-                  {/* Dropdown for category technologies */}
+                  {/* Desktop Dropdown for category technologies (sm and above) */}
                   {expandedCategory === category && (
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-card border border-border rounded-lg shadow-lg p-3 z-10 min-w-max">
+                    <div className="hidden sm:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-card border border-border rounded-lg shadow-lg p-3 z-20 min-w-max">
                       <div className="flex flex-wrap gap-2 max-w-xs">
                         {techs.map((tech) => (
                           <Button
                             key={tech}
-                            onClick={() => {
-                              setFilter(tech);
-                              setExpandedCategory(null);
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleTechSelect(tech, category);
                             }}
                             variant={filter === tech ? "default" : "outline"}
                             size="sm"
@@ -342,6 +382,44 @@ const Projects = () => {
               )
             )}
           </div>
+
+          {/* Mobile Modal for category technologies (below sm) */}
+          {expandedCategory && (
+            <div className="sm:hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+              <div className="bg-card border border-border rounded-lg shadow-lg w-full max-w-sm max-h-96 overflow-y-auto">
+                <div className="flex items-center justify-between p-4 border-b border-border">
+                  <h3 className="text-lg font-semibold">{expandedCategory}</h3>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setExpandedCategory(null)}
+                    className="h-8 w-8 p-0"
+                  >
+                    <X size={16} />
+                  </Button>
+                </div>
+                <div className="p-4">
+                  <div className="flex flex-wrap gap-2">
+                    {categorizedTechnologies[expandedCategory]?.map((tech) => (
+                      <Button
+                        key={tech}
+                        onClick={() => handleTechSelect(tech, expandedCategory)}
+                        variant={filter === tech ? "default" : "outline"}
+                        size="sm"
+                        className={`rounded-full px-3 py-1 transition-all duration-300 text-xs whitespace-nowrap ${
+                          filter === tech
+                            ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
+                            : "border-border text-muted-foreground hover:text-cyan-400 hover:border-cyan-400"
+                        }`}
+                      >
+                        {tech}
+                      </Button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
