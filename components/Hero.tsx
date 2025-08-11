@@ -10,7 +10,11 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = ["Full Stack Developer", "React Specialist", "GoLang Expert"];
+  const words = [
+    "Full Stack Developer",
+    "GoLang & TypeScript Specialist",
+    "GCP & AWS Expert",
+  ];
 
   useEffect(() => {
     const handleType = () => {
@@ -89,17 +93,14 @@ const Hero = () => {
                 Evan Huang
               </span>
             </h1>
-
             <div className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-8 h-12">
               <span className="border-r-2 border-cyan-400 pr-1">{text}</span>
             </div>
-
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl lg:mx-0 mx-auto mb-12 leading-relaxed">
-              I&apos;m a passionate full stack developer with 4+ years of
-              experience building scalable web applications. I love turning
-              complex problems into simple, beautiful, and intuitive solutions.
+              I&apos;m a Full Stack Software Developer with 4+ years of
+              experience specializing in AI-powered applications, with proven
+              expertise in GoLang, TypeScript, GCP and AWS.
             </p>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
               <Button
                 size="lg"
@@ -125,7 +126,6 @@ const Hero = () => {
                 Get In Touch
               </Button>
             </div>
-
             <div className="flex justify-center lg:justify-start space-x-6">
               <a
                 href="https://github.com/EvanHuang7"
