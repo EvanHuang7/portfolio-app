@@ -28,9 +28,9 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "AI Tools Studio",
+      title: "🛠️ AI Tools Studio",
       description:
-        "🛠️ AI Tools Studio is a full-stack microservices application seamlessly integrated with ☁️ Google Cloud Platform (GCP). It empowers users to create stunning content in seconds using a suite of AI-powered tools, including 🎨 Image Editing, 🖼️ AI Image Generation, 🎬 Video Generation and 💬 Intelligent Conversations.",
+        "A full-stack microservices application integrated with ☁️ Google Cloud Platform (GCP). It empowers users to create stunning content in seconds using a suite of AI-powered tools, including 🎨 Image Editing, 🖼️ AI Image Generation, 🎬 Video Generation and 💬 AI Voice Chat.",
       image:
         "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/AI-Tools-Studio-Project-Card.png",
       technologies: [
@@ -76,9 +76,9 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Order Food",
+      title: "🍔 Order Food",
       description:
-        "🍔 Oder Food is a full-stack food delivery platform, integrated with ☁️ AWS, that connects customers, restaurants, and delivery drivers in a unified system.",
+        "A full-stack food delivery platform, integrated with ☁️ AWS, that connects customers, restaurants, and delivery drivers in a unified system.",
       image:
         "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Order-Food-Project-Card.png",
       technologies: [
@@ -110,9 +110,9 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "LetsChat",
+      title: "💬 LetsChat",
       description:
-        "💬 LetsChat is a MERN stack (full-stack) real-time chat application that lets users connect with new friends and chat privately. Users can also create group chats, invite friends, and enjoy group messaging or even group video calls. In addition, users can post moments, as well as like and comment on others’ moments.",
+        "A MERN stack (full-stack) real-time chat application that lets users connect with new friends and chat privately. Users can also create group chats, invite friends, and enjoy group messaging or even group video calls. In addition, users can post moments, as well as like and comment on others’ moments.",
       image:
         "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/LetsChat-Project-Card.png",
       technologies: [
@@ -134,9 +134,9 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "AI Job Interview",
+      title: "💼 AI Job Interview",
       description:
-        "💬 AI Job Interview is a full-stack Next.js application that enables users to conduct mock interviews with AI. After each session, the AI provides personalized feedback to help users improve their interview skills.",
+        "A full-stack Next.js application that enables users to conduct mock interviews with AI. After each session, the AI provides personalized feedback to help users improve their interview skills.",
       image:
         "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/AI-Job-Interview-Project-Card.png",
       technologies: [
@@ -154,9 +154,9 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Item Shopping",
+      title: "🛒 Item Shopping",
       description:
-        "Item Shopping is an e-commerce app built with PHP, which offers a comprehensive platform for users to buy and sell.",
+        "A full-stack e-commerce app built with PHP, which offers a comprehensive platform for users to buy and sell.",
       image:
         "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Item-Shopping-Project-Card.png",
       technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
@@ -165,9 +165,9 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Connect To World",
+      title: "🌎 Connect To World",
       description:
-        "This CTWGO (Connect To World, Go!) project, a Python-based blog web application that enables users to interact with content and manage their accounts seamlessly.",
+        "This CTWGO (Connect To World, Go!) project, a full-stack Python-based blog web application that enables users to interact with content and manage their accounts seamlessly.",
       image:
         "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Connect-To-World-Project-Card.png",
       technologies: [
