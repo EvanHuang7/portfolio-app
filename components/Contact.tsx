@@ -56,7 +56,7 @@ const Contact = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Have a project in mind or want to discuss opportunities? I&apos;d
+            Interested in collaborating or discussing opportunities? I&apos;d
             love to hear from you. Let&apos;s create something amazing together.
           </p>
         </div>
