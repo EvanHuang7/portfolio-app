@@ -100,7 +100,8 @@ const About = () => {
               you&apos;ll find me contributing to open source projects or
               mentoring aspiring developers.
             </p>
-            <div className="flex flex-wrap gap-2">
+
+            {/* <div className="flex flex-wrap gap-2">
               {techs.map((tech) => (
                 <span
                   key={tech}
@@ -109,7 +110,7 @@ const About = () => {
                   {tech}
                 </span>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">
