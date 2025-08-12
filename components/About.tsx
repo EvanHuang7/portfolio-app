@@ -30,7 +30,7 @@ const About = () => {
       icon: <Monitor size={28} />,
       title: "Frontend Development",
       description:
-        "React, Next.js, Angular, TypeScript, JavaScript, Tailwind CSS, Shadcn, Redux, Zustand, and Tanstack Query",
+        "React, Next.js, Angular, TypeScript, JavaScript, Tailwind CSS, Shadcn, Daisy UI, Framer Motion, Redux, Zustand, and Tanstack Query",
       color: "from-blue-500 to-cyan-500",
     },
     {
@@ -44,20 +44,21 @@ const About = () => {
       icon: <Database size={28} />,
       title: "Database",
       description:
-        "PostgreSQL, MySQL, MongoDB, Redis, Firebase, Prisma ORM and Drizzle ORM",
+        "PostgreSQL, MySQL, MongoDB, Redis, Firebase, SQLAlchemy, Prisma ORM and Drizzle ORM",
       color: "from-purple-500 to-pink-500",
     },
     {
       icon: <Cloud size={28} />,
       title: "Cloud",
       description:
-        "Google Cloud Platform, AWS, Kubernetes, Docker, CI/CD pipelines",
+        "Google Cloud Platform, AWS, Kubernetes, Docker, Docker Swarm, CI/CD pipelines, GitHub Actions Workflow and KluCtl GitOps",
       color: "from-orange-500 to-red-500",
     },
     {
       icon: <Globe size={28} />,
       title: "Web Technologies",
-      description: "HTTP/HTTPS and gRPC protocols, Kafka, RabbitMQ, WebSockets",
+      description:
+        "HTTP/HTTPS, gRPC, Kafka, RabbitMQ, WebSockets and Stream.io",
       color: "from-indigo-500 to-purple-500",
     },
     {
@@ -83,7 +84,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-cyan-400">
-              My Journey
+              My Skills
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Started as a curious computer science student, I&apos;ve evolved
