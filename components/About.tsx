@@ -81,6 +81,7 @@ const About = () => {
           </h2>
         </div>
 
+        {/* TODO: Change this section to skill by remove the sentences, badges and experience images? */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-cyan-400">
@@ -126,6 +127,7 @@ const About = () => {
           </div>
         </div>
 
+        {/* TODO: Change the skill the be the same badge in project card */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
             <Card
