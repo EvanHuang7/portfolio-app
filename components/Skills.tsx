@@ -70,21 +70,20 @@ const Skills = () => {
           </h2>
         </div>
 
-        {/* TODO: Change this section to skill by remove the sentences? */}
         <div className="grid gap-12 items-center mb-20">
           <div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Started as a curious computer science student, I&apos;ve evolved
-              into a seasoned developer who thrives on creating exceptional
-              digital experiences. My journey spans across startups and
-              established companies, where I&apos;ve led teams and delivered
-              products used by millions.
+              I&apos;m passionate about building scalable, high-quality products
+              with clean architecture, modern technologies and elegant UI/UX. My
+              expertise spans full-stack development, cloud infrastructure, web
+              technologies, AI integrations, and responsive design—transforming
+              ideas into impactful, real-world solutions.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              I believe in writing clean, maintainable code and staying
-              up-to-date with the latest technologies. When I&apos;m not coding,
-              you&apos;ll find me contributing to open source projects or
-              mentoring aspiring developers.
+              Below are the skills I&apos;m proficient in, honed through
+              personal projects and professional experience. In the Projects
+              section, you can use the filter buttons to view only the projects
+              that showcase a specific skill.
             </p>
           </div>
         </div>
