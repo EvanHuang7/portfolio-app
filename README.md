@@ -35,7 +35,13 @@
 
 ## <a name="features">🚀 Features</a>
 
-**👤 Profile**: 
+**🛠 Skills Overview**: Organized technical skills section with clear categorization for easy scanning. 
+
+**💼 Project Showcase**: Highlight personal and professional projects with detailed descriptions, screenshots, and live/demo links.  
+
+**🔍 Project Filtering**: Quickly find relevant projects by filtering based on technology, category, or domain. 
+
+**🌙 Dark/Light Mode**: Toggle between themes for personalized viewing preferences.
 
 **🎨 Modern UI/UX**: Clean, intuitive interface designed for clarity and ease of use.
 
