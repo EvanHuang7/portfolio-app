@@ -15,7 +15,7 @@ const Experience = () => {
       location: "Saskatoon, SK",
       period: "2020 - 2024",
       description:
-        "Led the development of an innovative communications app at Vendasta, enhancing SMB customer engagement. Adept at mentoring, with a focus on achieving project milestones through teamwork.",
+        "Led the development of an innovative AI-powered communications app at Vendasta, enhancing SMB customer engagement. Adept at mentoring, with a focus on achieving project milestones through teamwork.",
       achievements: [
         "Developed an AI-powered communications app that centralizes all messages—including SMS and communications across platforms like email, Google, Facebook, Instagram, and others—into a unified inbox, helping small and medium-sized businesses better connect and engage with their customers in one place while reducing operational complexity and labor cost",
         "Integrated the single communication app with other software systems, including automation system, Customer Relationship Management (CRM) system, customer support system, and email system etc",

@@ -74,21 +74,24 @@ const Skills = () => {
           <div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               I&apos;m passionate about building scalable, high-quality products
-              with clean architecture, modern technologies and elegant UI/UX. My
-              expertise spans full-stack development, cloud infrastructure, web
-              technologies, AI integrations, and responsive design—transforming
-              ideas into impactful, real-world solutions.
+              with clean architecture, modern technologies and elegant UI/UX.{" "}
+              <strong>
+                My expertise spans full-stack development, cloud infrastructure,
+                web technologies, AI integrations, and responsive design
+              </strong>
+              —transforming ideas into impactful, real-world solutions.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Below are the skills I&apos;m proficient in, honed through
-              personal projects and professional experience. In the Projects
-              section, you can use the filter buttons to view only the projects
-              that showcase a specific skill.
+              personal projects and professional experience.{" "}
+              <strong>
+                In the Projects section, you can use the filter buttons to view
+                only the projects that showcase a specific skill.
+              </strong>
             </p>
           </div>
         </div>
 
-        {/* TODO: Change the skill the be the same badge in project card */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
             <Card

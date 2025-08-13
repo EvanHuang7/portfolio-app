@@ -98,9 +98,12 @@ const Hero = () => {
             </div>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl lg:mx-0 mx-auto mb-12 leading-relaxed">
               I&apos;m a Full Stack Software Developer with 4+ years of
-              experience specializing in AI-powered applications, with proven
-              expertise in GoLang, TypeScript, PostgreSQL, AWS, Google Cloud
-              Platform, Kubernetes and Docker.
+              experience specializing in{" "}
+              <strong>AI-powered applications</strong>, with proven expertise in{" "}
+              <strong>
+                GoLang, TypeScript, PostgreSQL, AWS, Google Cloud Platform,
+                Kubernetes and Docker.
+              </strong>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
               <Button

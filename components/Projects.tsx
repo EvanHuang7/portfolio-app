@@ -354,8 +354,10 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A showcase of my recent work, demonstrating expertise across various
-            technologies and domains, each accompanied by a comprehensive,
-            step-by-step README guide.
+            technologies and domains,{" "}
+            <strong>
+              each accompanied by a comprehensive, step-by-step README guide.
+            </strong>
           </p>
         </div>
 
