@@ -11,19 +11,8 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const About = () => {
+const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
-
-  const techs = [
-    "React",
-    "Node.js",
-    "GoLang",
-    "Python",
-    "TypeScript",
-    "GCP",
-    "AWS",
-    "Docker",
-  ];
 
   const skills = [
     {
@@ -71,22 +60,19 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 relative bg-background">
+    <section id="skills" className="py-20 relative bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              About Me
+              My Skills
             </span>
           </h2>
         </div>
 
-        {/* TODO: Change this section to skill by remove the sentences, badges and experience images? */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        {/* TODO: Change this section to skill by remove the sentences? */}
+        <div className="grid gap-12 items-center mb-20">
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-cyan-400">
-              My Skills
-            </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Started as a curious computer science student, I&apos;ve evolved
               into a seasoned developer who thrives on creating exceptional
@@ -100,31 +86,6 @@ const About = () => {
               you&apos;ll find me contributing to open source projects or
               mentoring aspiring developers.
             </p>
-
-            {/* <div className="flex flex-wrap gap-2">
-              {techs.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-3 py-1 bg-slate-800 text-cyan-400 rounded-full text-sm border border-cyan-400/20"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div> */}
-          </div>
-
-          <div className="relative">
-            <div className="w-80 h-80 mx-auto relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
-              <div className="relative w-full h-full bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-700 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-cyan-400 mb-2">
-                    4+
-                  </div>
-                  <div className="text-muted-foreground">Years Experience</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -160,4 +121,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skills;

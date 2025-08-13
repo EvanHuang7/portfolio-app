@@ -41,8 +41,8 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, [text, isDeleting, loopNum, typingSpeed, words]);
 
-  const scrollToAbout = () => {
-    const element = document.getElementById("about");
+  const scrollToSkills = () => {
+    const element = document.getElementById("skills");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -156,7 +156,7 @@ const Hero = () => {
       </div>
 
       <button
-        onClick={scrollToAbout}
+        onClick={scrollToSkills}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-muted-foreground hover:text-cyan-400 transition-colors duration-1000 animate-bounce"
       >
         <ArrowDown size={24} />
