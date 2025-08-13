@@ -251,15 +251,16 @@ const Projects = () => {
       "Socket.io",
       "WebSocket",
       "Stream.io",
+      "Clerk & Clerk Billing",
     ],
     // "Mobile Development": ["React Native"],
     Other: [
       "Google Gemini AI",
       "Vapi AI",
       "Imagekit.io AI",
-      "Clerk & Clerk Billing",
       "Cloudflare",
       "Cloudinary",
+      "Datadog",
     ],
   };
 
@@ -353,7 +354,8 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A showcase of my recent work, demonstrating expertise across various
-            technologies and domains.
+            technologies and domains, each accompanied by a comprehensive,
+            step-by-step README guide.
           </p>
         </div>
 

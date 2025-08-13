@@ -43,6 +43,8 @@ const Experience = () => {
         "gRPC",
         "Microservices",
         "CI/CD pipelines",
+        "ArgoCD",
+        "Datadog",
       ],
     },
   ];

@@ -47,14 +47,14 @@ const Skills = () => {
       icon: <Globe size={28} />,
       title: "Web Technologies",
       description:
-        "HTTP/HTTPS, gRPC, Kafka, RabbitMQ, WebSockets and Stream.io",
+        "HTTP/HTTPS, gRPC, Kafka, RabbitMQ, WebSockets, Stream.io and Clerk & Clerk Billing",
       color: "from-indigo-500 to-purple-500",
     },
     {
       icon: <Sparkles size={28} />,
       title: "Other",
       description:
-        "Google Gemini AI, Vapi AI, Imagekit.io AI, Clerk & Clerk Billing, Cloudflare and Cloudinary",
+        "Google Gemini AI, Vapi AI, Imagekit.io AI, Cloudflare, Cloudinary and Datadog",
       color: "from-pink-500 to-rose-500",
     },
   ];
