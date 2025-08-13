@@ -39,7 +39,11 @@
 
 **💼 Project Showcase**: Highlight personal and professional projects with detailed descriptions, screenshots, and live/demo links.  
 
-**🔍 Project Filtering**: Quickly find relevant projects by filtering based on technology, category, or domain. 
+**🔍 Project Filtering**: Quickly find relevant projects by filtering based on technology, category, or domain.
+
+**📊 Professional Experience**: Detailed timeline of work history, responsibilities, and key achievements, emphasizing career growth and impact.
+
+**📬 Contact & Social Links**: Integrated contact form and clickable icons for LinkedIn, GitHub, and email. 
 
 **🌙 Dark/Light Mode**: Toggle between themes for personalized viewing preferences.
 
