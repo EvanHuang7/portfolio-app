@@ -25,7 +25,7 @@
 
 ## <a name="introduction">📋 Introduction</a>
 
-💬 **Portfolio App** is a **Next.js** application that ...
+👨‍💼 **Portfolio App** is a **Next.js**-powered, web application designed to showcase my personal projects, technical skills, and professional experience in a visually engaging and responsive format.
 
 ## <a name="tech-stack">🛠️ Tech Stack</a>
 
