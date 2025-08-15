@@ -52,10 +52,7 @@
 **📱 Responsive Design**: Seamlessly adapts to any screen size or device.
 
 ## <a name="diagram-screenshots">📸 Screenshots</a>
-
-- **📸 Screenshots**: [Miro Link](#)
-
-  ![🖼️ Screenshots Preview](#)
+  ![🖼️ Screenshots Preview](https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/App-Screenshot.png)
 
 ## <a name="installation-start-project">📦 Installation and ⚙️ Start Project</a>
 
