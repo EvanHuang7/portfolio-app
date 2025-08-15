@@ -112,7 +112,7 @@ Follow these steps to deploy app in Vercel:
 
 Hi! I'm Evan Huang — a full-stack software developer with 4+ years of experience in web applications and cloud integration. I’m passionate about building scalable products with clean architecture, elegant UI/UX, and modern technologies like Next.js, TypeScript Shadcn and Tailwind CSS.
 
-This Portfolio app project was completed on **August 12, 2025**, and reflects my focus on full stack development, cloud infrastructure, and responsive design into real-world solutions.
+This Portfolio app project was completed on **August 15, 2025**, and reflects my focus on full stack development and responsive design into real-world solutions.
 
 Feel free to connect with me in LinkedIn or GitHub!
 
