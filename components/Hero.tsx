@@ -12,7 +12,7 @@ const Hero = () => {
 
   const words = [
     "Full Stack Developer",
-    "GoLang & TypeScript Specialist",
+    "React & GoLang Specialist",
     "GCP & AWS Expert",
   ];
 
@@ -101,7 +101,7 @@ const Hero = () => {
               experience specializing in{" "}
               <strong>AI-powered applications</strong>, with proven expertise in{" "}
               <strong>
-                GoLang, TypeScript, PostgreSQL, AWS, Google Cloud Platform,
+                React, Node.js, GoLang, Python, PostgreSQL, AWS, Google Cloud Platform,
                 Kubernetes and Docker.
               </strong>
             </p>
