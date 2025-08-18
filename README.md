@@ -29,7 +29,7 @@
 
 ## <a name="tech-stack">🛠️ Tech Stack</a>
 
-- **🖥️ Frontend & Backend**:
+- **🖥️ Frontend**:
   - Next.js, TypeScript
   - Shadcn & Tailwind CSS for UI
 
