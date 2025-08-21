@@ -38,7 +38,7 @@ const Skills = () => {
     },
     {
       icon: <Cloud size={28} />,
-      title: "Cloud",
+      title: "Cloud Infrastructure",
       description:
         "Google Cloud Platform, AWS, Kubernetes, Docker, Docker Swarm, CI/CD pipelines, GitHub Actions Workflow, ArgoCD and KluCtl GitOps",
       color: "from-orange-500 to-red-500",
