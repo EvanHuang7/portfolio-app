@@ -15,11 +15,11 @@ const Experience = () => {
       location: "Saskatoon, SK",
       period: "2020 - 2024",
       description:
-        "Led the development of an innovative AI-powered communications app at Vendasta, enhancing SMB customer engagement. Adept at mentoring, with a focus on achieving project milestones through teamwork.",
+        "Led the development of a unified AI-powered communications app at Vendasta, improving SMB engagement and reducing complexity. Strong collaborator with experience in mentorship, RFCs, and Agile delivery.",
       achievements: [
         "Developed an AI-powered communications app that centralized SMS, email, Google, Facebook, and Instagram messages into a unified inbox, helping SMBs streamline customer engagement while reducing operational complexity and costs.",
         "Built robust gRPC and REST APIs in microservices with Go and Python to support new product features and third-party integrations with systems such as CRM, automation, and customer support platforms.",
-        "Partnered with designers to deliver scalable, well-tested front-end features using JavaScript, TypeScript, and Angular, ensuring seamless user experiences.",
+        "Collaborated with designers to build scalable, tested front-end features in JavaScript, TypeScript, and Angular for seamless user experiences.",
         "Led feature delivery by investigating technical uncertainties, breaking down initiatives into actionable tasks, and guiding the team to successful completion.",
         "Managed data integration and migrations across MySQL, PostgreSQL, Elasticsearch, Firebase, and Google Cloud Datastore, ensuring security and reliability during system upgrades.",
         "Processed asynchronous events with Google Cloud Pub/Sub, enabling reliable, scalable event-driven workflows.",
