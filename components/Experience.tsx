@@ -17,15 +17,13 @@ const Experience = () => {
       description:
         "Led the development of a unified AI-powered communications app at Vendasta, improving SMB engagement and reducing complexity. Strong collaborator with experience in mentorship, RFCs, and Agile delivery.",
       achievements: [
-        "Developed an AI-powered communications app that centralized SMS, email, Google, Facebook, and Instagram messages into a unified inbox, helping SMBs streamline customer engagement while reducing operational complexity and costs.",
-        "Built robust gRPC and REST APIs in microservices with Go and Python to support new product features and third-party integrations with systems such as CRM, automation, and customer support platforms.",
-        "Collaborated with designers to build scalable, tested front-end features in JavaScript, TypeScript, and Angular for seamless user experiences.",
-        "Led feature delivery by investigating technical uncertainties, breaking down initiatives into actionable Jira tasks, and guiding the team to successful completion.",
-        "Managed data integration and migrations across MySQL, PostgreSQL, Elasticsearch, Firebase, and Google Cloud Datastore, ensuring security and reliability during system upgrades.",
-        "Processed asynchronous events with Google Cloud Pub/Sub, enabling reliable, scalable event-driven workflows.",
-        "Deployed and monitored cloud-native infrastructure on GCP with Kubernetes, Docker, CI/CD pipelines, ArgoCD, and Datadog, achieving high availability and performance.",
-        "Contributed to Agile and Scrum practices by leading sprint retros, planning in Product Backlog Refinement (PBR), and presenting new features in sprint reviews.",
-        "Enhanced team collaboration by authoring RFCs in Confluence, mentoring junior developers, conducting code reviews, and documenting key system features.",
+        "Developed an AI-powered communications app that centralized SMS, Email, Instagram, WhatsApp, and Facebook messages into a unified inbox, handling 10M+ messages/month and helping SMBs streamline customer engagement while reducing operational complexity and costs.",
+        "Built robust gRPC and REST APIs in microservices with Go and Python to support new product features and third-party integrations with CRM, automation, and customer support platforms, contributing to a 20% increase in customer retention.",
+        "Collaborated with designers to build scalable, tested front-end features in JavaScript, TypeScript, and Angular for seamless user experiences, improving feature adoption by 30%.",
+        "Led feature delivery by investigating technical uncertainties, breaking down initiatives into actionable Jira tasks, and guiding the team to successful completion, improving team sprint completion rate to 95%.",
+        "Managed cross-database integrations and migrations (MySQL, PostgreSQL, Elasticsearch, Firebase, Google Cloud Datastore) while architecting event-driven workflows with Google Cloud Pub/Sub, processing 5M+ asynchronous events monthly and reducing downtime by 40% during system upgrades.",
+        "Deployed and monitored cloud-native infrastructure on GCP with Kubernetes, Docker, CI/CD pipelines, ArgoCD, and Datadog, achieving 99.9% uptime and reducing incident resolution time by 50%.",
+        "Improved team productivity and collaboration by leading Agile processes (sprint retros, PBR planning, feature demos), authoring 12+ RFCs, mentoring 3+ junior developers, conducting code reviews, and documenting key system features, resulting in a 20% faster feature delivery.",
       ],
       technologies: [
         "Go",
