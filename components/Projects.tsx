@@ -515,7 +515,7 @@ const Projects = () => {
                         className="bg-cyan-500/80 hover:bg-cyan-500 text-white"
                       >
                         <ExternalLink size={16} className="mr-1" />
-                        Demo
+                        {project.id === 1 ? "Screenshots" : "Demo"}
                       </Button>
                     </a>
 
