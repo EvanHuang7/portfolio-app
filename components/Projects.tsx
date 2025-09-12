@@ -72,7 +72,7 @@ const Projects = () => {
         "Cloudflare",
         "Microservices",
       ],
-      demoUrl: "https://aitools-evanhuang.duckdns.org/",
+      demoUrl: "https://miro.com/app/board/uXjVJV2hNxk=/",
       githubUrl: "https://github.com/EvanHuang7/ai-tools",
     },
     {
