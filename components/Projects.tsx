@@ -32,7 +32,7 @@ const Projects = () => {
       description:
         "A full-stack microservices application integrated with ☁️ Google Cloud Platform (GCP). It empowers users to create stunning content in seconds using a suite of AI-powered tools, including 🎨 Image Editing, 🖼️ AI Image Generation, 🎬 Video Generation and 💬 AI Voice Chat.",
       image:
-        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/AI-Tools-Studio-Project-Card.png",
+        "https://res.cloudinary.com/dapo3wc6o/image/upload/v1758167798/AI-Tools-Studio-Project-Card_tgxwsn.png",
       technologies: [
         "React",
         "TypeScript",
@@ -81,7 +81,7 @@ const Projects = () => {
       description:
         "A full-stack food delivery platform, integrated with ☁️ AWS, that connects customers, restaurants, and delivery drivers in a unified system.",
       image:
-        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Order-Food-Project-Card.png",
+        "https://res.cloudinary.com/dapo3wc6o/image/upload/v1758168052/Order-Food-Project-Card_dawy6m.png",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -115,7 +115,7 @@ const Projects = () => {
       description:
         "A MERN stack (full-stack) real-time chat application that lets users connect with new friends and chat privately. Users can also create group chats, invite friends, and enjoy group messaging or even group video calls. In addition, users can post moments, as well as like and comment on others’ moments.",
       image:
-        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/LetsChat-Project-Card.png",
+        "https://res.cloudinary.com/dapo3wc6o/image/upload/v1758168264/LetsChat-Project-Card_pld7qw.png",
       technologies: [
         "React",
         "JavaScript",
@@ -139,7 +139,7 @@ const Projects = () => {
       description:
         "A full-stack Next.js application that enables users to conduct mock interviews with AI. After each session, the AI provides personalized feedback to help users improve their interview skills.",
       image:
-        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/AI-Job-Interview-Project-Card.png",
+        "https://res.cloudinary.com/dapo3wc6o/image/upload/v1758168302/AI-Job-Interview-Project-Card_srwlm4.png",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -159,7 +159,7 @@ const Projects = () => {
       description:
         "A full-stack e-commerce app built with PHP, which offers a comprehensive platform for users to buy and sell.",
       image:
-        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Item-Shopping-Project-Card.png",
+        "https://res.cloudinary.com/dapo3wc6o/image/upload/v1758168526/Item-Shopping-Project-Card_ry2nlr.png",
       technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
       demoUrl: "https://www.youtube.com/watch?v=HH3utaJtaF8",
       githubUrl: "https://github.com/EvanHuang7/Item-Shopping-website",
@@ -170,7 +170,7 @@ const Projects = () => {
       description:
         "This CTWGO (Connect To World, Go!) project, a full-stack Python-based blog web application that enables users to interact with content and manage their accounts seamlessly.",
       image:
-        "https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/Connect-To-World-Project-Card.png",
+        "https://res.cloudinary.com/dapo3wc6o/image/upload/v1758168561/Connect-To-World-Project-Card_gxsg5p.png",
       technologies: [
         "Python",
         "Flask",
