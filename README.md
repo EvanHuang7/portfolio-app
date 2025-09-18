@@ -52,7 +52,7 @@
 **📱 Responsive Design**: Seamlessly adapts to any screen size or device.
 
 ## <a name="diagram-screenshots">📸 Screenshots</a>
-  ![🖼️ Screenshots Preview](https://storage.googleapis.com/ai-tools-gcs-bucket/Portfolio%20App%20Images/App-Home-Screenshot.png)
+  ![🖼️ Screenshots Preview](https://res.cloudinary.com/dapo3wc6o/image/upload/v1758167482/App-Home-Screenshot_tc2lao.png)
 
 ## <a name="installation-start-project">📦 Installation and ⚙️ Start Project</a>
 
